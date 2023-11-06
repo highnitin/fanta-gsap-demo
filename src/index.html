@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Fonts/Product Sans Regular.ttf">
+    <link rel="stylesheet" href="../Fonts/Product Sans Bold.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <title>GSAP - Scroll Animation</title>
+</head>
+<body class="font-product-sans scroll-smooth">
+    <nav class="flex flex-row justify-between items-center fixed gap-7 w-full text-white p-5 z-50 text-f10">
+        <h1 class="text-f10">Fanta</h1>
+        <ul class="flex flex-row gap-10 text-f10">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="#"><li>Review</li></a></ul>
+        <span class="w-w1vw">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#fff"></path></svg>
+        </span>
+    </nav>
+
+  
+    <main class="flex flex-col">
+        
+        <section id="section1" class="w-full h-screen bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-orange-500 to-yellow-300 flex justify-center items-center">
+        
+        <h1 class=" text-f25vw font-semibold text-white tracking-tighter">FANTA</h1>
+        <img id="fanta" src="../Assets/fanta.png" alt="Fanta Can" class="w-w40 absolute z-10" style="top: 18%; transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s;">
+        <img id="orange1" src="../Assets/orange.webp" alt="Orange1" class="w-w20 absolute z-20" style="top: 57%; left:50%; transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+        <img id="orange2" src="../Assets/orange2.png" alt="Orange2" class="w-w15 absolute z-0" style="top: 10%; left:35%; transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+        <img id="leaf1" src="../Assets/leaf.webp" alt="Leaf1" class="w-w20 absolute z-20" style="top: 13%; left:2%; transform: rotate(50deg); transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+        <img id="leaf2" src="../Assets/leaf2.png" alt="Leaf2" class="w-w10 absolute z-20" style="bottom: 7%; right:10%; transform: rotate(-90deg); transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+        <img src="../Assets/coconoutleaf.png" alt="Coconut Leaf" class="w-w20 absolute z-20" style="top: 10%; right:0%; transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+        
+        
+    </section>
+    
+        <section id="section2" class="w-full h-screen bg-amber-950 flex flex-row">
+        <section id="part1" class="w-full h-full flex justify-center items-center">
+            <span class="w-w45 relative" style="top: 25%; left: -10%;">
+                
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(270deg);">
+                        <path fill="#E34234" d="M25.9,-33.2C32.8,-30.7,37,-22,37,-13.9C36.9,-5.8,32.7,1.7,31.8,12.1C30.9,22.6,33.3,35.9,28.6,50.1C23.8,64.3,11.9,79.3,-3.7,84.4C-19.3,89.5,-38.6,84.6,-45.1,71C-51.7,57.4,-45.4,35.1,-48.1,17.8C-50.8,0.5,-62.4,-11.8,-64.4,-25.6C-66.4,-39.4,-58.6,-54.8,-46.3,-55.5C-33.9,-56.2,-17,-42.3,-3.7,-37.1C9.5,-32,19,-35.7,25.9,-33.2Z" transform="translate(100 100)" />
+                    </svg>
+                </span>
+            </section>
+            <section id="part2" class="w-full h-full flex flex-col justify-center items-start p-16">
+                <h2 class="text-f5vw font-semibold text-white tracking-tighter">Last of it's Drinks</h2>
+                <!-- <h2 class="text-f5vw font-semibold text-orange-500 tracking-tighter">Last of it's Drinks</h2> -->
+                <p class="text-f1vw w-3/4 text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                </p>
+            </section>
+        </section>
+        
+        <section id="section3" class="w-full h-screen bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-orange-500 to-yellow-300 " style="padding: 10%; top: 20%;">
+            <section class="cardContainer flex justify-center items-center flex-row pt-1.5vw" style="gap: 8vw;">
+                
+                <span id="card1" class="bg-white w-1/3 h-h70 rounded-1.5vw flex justify-center items-center relative">
+                    <img id="cocacola" src="../Assets/cocacola.png" alt="Cocacola Can" class="w-w76 absolute z-10" style="top: -13%;  transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+                    <img id="lemonC" src="../Assets/lemon.png" alt="Lemon" class="w-w150 absolute z-0" style="top: -25%;  transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+                    <a href="#" class="absolute bg-orange-600 text-white px-10vw py-5vw text-f0.5vw rounded-full hover:bg-orange-300 hover:text-black hover:cursor-pointer" style="bottom:5%"><span>Get Now!</span></a>
+                </span> 
+                <span id="card2" class="bg-white w-1/3 h-h70 rounded-1.5vw flex justify-center items-center relative">
+
+                    <a href="#" class="absolute bg-orange-600 text-white px-10vw py-5vw text-f0.5vw rounded-full hover:bg-orange-300 hover:text-black hover:cursor-pointer" style="bottom:5%"><span>Get Now!</span></a>
+                </span>
+                <span id="card3" class="bg-white w-1/3 h-h70 rounded-1.5vw flex justify-center items-center relative">
+                    <img id="pepsi" src="../Assets/pepsi.png" alt="Pepsi Can" class="w-w78 absolute z-10" style="top: -13%;  transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+                    <img id="lemonP" src="../Assets/lemon.png" alt="Lemon" class="w-w150 absolute z-0" style="top: -25%;  transition:all cubic-bezier(0.19, 1, 0.22, 1)0.5s">
+                    <a href="#" class="absolute bg-orange-600 text-white px-10vw py-5vw text-f0.5vw rounded-full hover:bg-orange-300 hover:text-black hover:cursor-pointer" style="bottom:5%"><span>Get Now!</span></a>
+                </span>
+                
+            </section>            
+        </section>
+
+        <section id="section4" class="w-full bg-amber-950">
+            <section id="part4Scroll" class="w-full flex flex-col justify-center items-center p-16">
+                <h2 class="text-f5vw font-semibold tracking-tighter text-white underline">Text Reveal Using GSAP + Lenis</h2>
+                <p class="reveal-type text-f3vw w-3/4 font-product-sans" data-bg-color="#6b6a6a" data-fg-color="#fff">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                </p>
+            </section>
+        </section>
+
+        <section id="section5" class="w-full bg-black-custom">
+            <section id="part5Scroll" class="w-full flex flex-col justify-center items-center p-16">
+                <h2 class="text-f5vw font-semibold text-white tracking-tighter">Text Reveal Using GSAP + Lenis</h2>
+                <!-- #353535 bg color, fb - red  -->
+                <p class="reveal-type text-f3vw w-3/4 font-product-sans" data-bg-color="#353535" data-fg-color="#ff0000">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores itaque voluptas, provident quod ex veniam in! Voluptas et sequi aperiam nostrum porro, nulla suscipit autem ratione nihil eveniet, aliquid non?
+                </p>
+            </section>
+        </section>
+
+
+        <footer class="bg-black p-3 text-white text-center text-f1vw border-t-2 border-purple-300">
+            Feel free to inpiration from the design | Designed by
+            <a href="https://linkedin.com/in/highnitin" target="_blank">
+                <span class="underline hover:text-orange-500"> 
+                HighNitin
+            </span>
+            </a>
+        </footer>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <script src="https://unpkg.com/split-type"></script>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
