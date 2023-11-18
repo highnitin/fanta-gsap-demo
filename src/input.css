@@ -1,3 +1,6 @@
+@import url(../Fonts/ProductSansRegular.ttf);
+@import url(../Fonts/ProductSansBold.ttf);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
