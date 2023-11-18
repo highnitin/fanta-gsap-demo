@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
     font-family: 'Product Sans';
     src: url('../Fonts/ProductSansRegular.ttf') format('truetype');
 }
@@ -11,4 +11,4 @@
 @font-face {
     font-family: 'Product Sans Bold';
     src: url('../Fonts/ProductSansBold.ttf') format('truetype');
-}
+} */
