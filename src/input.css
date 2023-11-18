@@ -4,5 +4,5 @@
 
 @font-face {
     font-family: 'Product Sans';
-    src: url(../Fonts/ProductSansRegular.ttf);
+    src: url('../Fonts/ProductSansRegular.ttf') format('truetype');
 }

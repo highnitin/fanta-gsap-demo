@@ -36,7 +36,7 @@ module.exports = {
         'h70':'70vh'
       },
       fontFamily: {
-        'product-sans': ['Product Sans'],
+        'product-sans': ['Product Sans',  'sans-serif'],
         'roboto': ['Roboto', 'sans-serif']
       },
       fontSize: {
